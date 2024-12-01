@@ -102,4 +102,11 @@ To test the API, you use any of the following
 * Curl ( it is a command line based testing)
   ```bash
   CURl -X GET <your API base URL>
-NB: while testing for the release year and movie summary, make sure to input the path parameters being defined in your API endpoints e.g for year say 2024, it will be /movies/year/2024, for a movie summary, say the id is 101, it will be /movies/101/summary.
+**NB:** while testing for the release year and movie summary, make sure to input the path parameters being defined in your API endpoints e.g for year say 2024, it will be /movies/year/2024, for a movie summary, say the id is 101, it will be /movies/101/summary.
+
+### Contribution
+Contributions are also welcomed on this project! Please feel free to fork the repository and submit pull requests with your improvements.
+
+### License
+This project is licensed under the MIT. Check out the ```LICENSE``` file for details
+
