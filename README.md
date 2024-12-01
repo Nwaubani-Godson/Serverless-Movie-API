@@ -72,4 +72,33 @@ The project follows a serverless architecture utilizing AWS services:
      ```bash
      <python_file>.<function_name>
 
- ### Configuring API Gateway
+### Setting up API
+#### Configuring an API in API Gateway
+* Navigate to API Gateway in your AWS console
+* Choose create and API
+* Select the API type you want, either HTTP API or REST API
+* Give your API a name
+#### Define Resources and Methods
+You will define three resources in this API, each mapped to a lambda function
+* **Resource 1:** /movies
+   * Configure the method to be GET
+   * Link it to the get_movies lambda function
+* **Resource 2:** /movies/{year}/year
+   * Configure the method to be GET
+   * Link it to the get_movies_by_year lambda function
+   * Define the path parameter to be {year}
+* **Resource 3:** /movies/{movie_id}/summary
+   * Configure the method to be GET
+   * Link it to the get_movie_summary lambda function
+   * Define the path parameter to be {movie_id}
+#### Deploy the API
+* In the API Gateway choose Deploy API
+* Select Stages and create a new stage e.g dev or prod
+* Once deployment is successful, copy the base URL generated for your API endpoint.
+### Testing the API 
+To test the API, you use any of the following
+* Postman (it is a UI based testing tool)
+* Curl ( it is a command line based testing)
+  ```bash
+  CURl -X GET <your API base URL>
+NB: while testing for the release year and movie summary, make sure to input the path parameters being defined in your API endpoints e.g for year say 2024, it will be /movies/year/2024, for a movie summary, say the id is 101, it will be /movies/101/summary.
