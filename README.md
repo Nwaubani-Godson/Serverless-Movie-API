@@ -34,6 +34,7 @@ The project follows a serverless architecture utilizing AWS services:
  - AWS CLI installed and configured ([Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html))
  - Git installed ([Download Git](https://git-scm.com/downloads))
  - Optional: **Postman** for testing or you can test with the curl command in your cli.
+ - Optional: **VS Code as your editor**
 
 ### Getting Started
 1. **Clone the Repository:**
