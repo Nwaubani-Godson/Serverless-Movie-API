@@ -14,7 +14,7 @@
 ## Architecture
 The project follows a serverless architecture utilizing AWS services:
 
-![image](https://github.com/user-attachments/assets/c57294d0-6027-496e-85c5-7e1283785e4f)
+![image](https://github.com/user-attachments/assets/fffaff1f-317c-42dc-95c2-4ce3f458a8b1)
 
 ### Services Used
   1. DynamoDB Table
